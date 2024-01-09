@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                min-height: 100vh;
+                align-items: center;
+                background: #fff;
+            }
+            .card{
+            
+                position: relative;
+                width: 700px;
+                min-height: 400px;
+                background: #fff;
+                box-shadow: 15px 15px 60px rgba(0,0,0,0.15);
+                padding: 20px;
+            }
+            .card .top{
+               display: flex; 
+               justify-content: space-between;
+               align-items: center;
+            }
+            .card .top .userdetails{
+                display: flex;
+                align-items: center;
+            }
+            .card .top .userdetails .profile{
+                position: relative;
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 8px;
+            }
+            .cover{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .card .top .userdetails h3{
+                font-size: 16px;
+                color: #4d4d4f;
+                font-weight: 500;
+                line-height: 1em;
+            }
+            .card .top .userdetails h3 span{
+                font-size: 0.75em;
+            }
+            .dot{
+                transform: scale(0.6);
+                cursor: pointer;
+
+            }
+            .imgbx{
+                position: relative;
+                    width: 100%;
+                    height: 320px;
+                    margin: 10px 0 15px;
+
+            }
+            .actionbts{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .actionbts img{
+                max-width: 25px;
+                cursor: pointer;
+            }
+            .actionbts .left img{
+                 margin-right: 2px;
+                
+            }
+            .likes{
+                font-weight: 500;
+                margin-top: 10px;
+                font-size: 16px;
+               
+            }
+            .message{
+                font-weight: 100;
+                margin-top: 1px;
+                line-height: 1em;
+            }
+            .comments{
+                margin-top: 5px;
+                font-weight: 400;
+                font-family: sans-serif;
+                color:#999;
+            }
+            .addcomments{
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+
+            }
+            .addcomments .userimg{
+                position: relative;
+                min-width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 8px;
+            }
+            .text{
+                width: 100%;
+                border: none;
+                outline: none;
+                font-weight: 400;
+                font-size: 16px;
+                color: #262626;
+            }
+            .text::placeholder{
+                color: #777;
+            }
+            .posttime{
+                margin: 5px;
+                font-weight: 500;
+                color: #777;
+            }
+            .i{
+                height: 11%;
+                width: 7.5%;
+            }
+            .image{
+                border-radius: 50%;
+                border: 5px solid rgb(232, 13, 82);
+                border-width: 0.2rem;
+                padding: 0.2rem;
+                height: 3cm;
+               
+            }
+            .imag{
+                width:23%;
+                padding: 0.4rem;
+                float: left;
+                
+            }
+            .image:hover{
+                transform: translate(+10px);
+            }
+            p
+            {
+                text-align: center;
+            }
+            .he{
+                float: right;
+            }
+            .me{
+                font-size: smaller;
+                font-weight: 600;
+                font-family: sans-serif;
+
+            } 
+        </style>
+        
+        
+      <div class="card">
+        <div class="header">
+            <img src="bannu.jpg.jpg" class="he" height="50cm" width="50cm" style="border-radius: 50%;" >
+            <img src="pp.jpg" height="80cm" width="200cm">
+            <img src="msg.jpg" class="he" height="50cm" width="50cm" >
+            <img src="home.jpg" class="he" height="50cm" width="50cm" >
+            <img src="post.jpg" class="he" height="50cm" width="50cm" >
+            <img src="s.jpg" class="he" height="50cm" width="50cm" >
+            
+        <div class="ig">
+            <div class="imag"><img src="vk.jpg" class="image"><p class="me" style="float: left;">hemanth_ononline</p></div>
+                    <div class="imag"><img src="a1a.jpg" class="image"><p class="me">ramana</p></div>
+                    <div class="imag"><img src="bg.jpg" class="image"><p class="me">narayana</p></div>
+                    <div class="imag"><img src="aaa.jpg" class="image"><p class="me" >Jhansi...</p></div>
+                    <br><br><br><br><br><br><br><br><br><br><br><hr>
+        </div>
+              <div class="top">
+                
+                <div class="userdetails">
+                    <div class="profile">
+                        <img src="bannu.jpg.jpg"    class="cover">
+                    </div>
+                    <h3 style="font-weight: 100;color:black;"><b>hemanth_ononline</b><br><span>KI Parru,India</span></h3>
+                </div>
+                <div>
+                    <img src="dot.png" class="dot">
+                </div>
+              </div>
+              <div>
+                <div class="imgbx">
+                    <img src="kohli.jpg" class="cover">
+                </div>
+                <div class="actionbtns">
+                    <div class="left">
+                        <img src="heart.png" class="heart" height="8%" width="8%" onclick="likebutton()">&ensp;
+                        <img src="comment.png" class="i">&ensp;
+                        <img src="share.png" class="i"> 
+                        <img src="bookmark.png" class="i" style="float: right;">
+                    </div>
+                    <div class="right">
+                        
+                    </div>
+                    
+                </div>
+                <h4 class="likes" style="color:black;font-family: sans-serif;font-size:medium;">Liked by virat.kohli and 2,245 others</h4>
+                <div><p class="message" style="font-family:sans-serif;font-size: smaller;text-align: left;color: black;"><b>hemanth_ononline</b> My favaurite cricketer <a href="">@virat.kohli </a>,our indian run machine.</p>
+                    one of icon</p></div>
+                    <p style="text-align: left;font-family:sans-serif;font-size: smaller;"><a href=""> #virat #viratkohli #ipl #cricket #rohitsharma #kohli #msdhoni #rcb #viratians #kingkohli #dhoni #indiancricket <br>#indiancricketteam #india #abdevilliers #virushka #klrahul #csk #icc #teamindia #viratian #bcci #msd #viratkohlifanpage<br> #love #hardikpandya #mahi #anushkasharma #royalchallengersbangalore #viratkohlifc</a></p>
+                <h4 class="comments" style="font-family: sans-serif;">view all 25,556 comments</h4>
+                <div class="addcomments">
+                    <div class="userimg">
+                        <img src="bannu.jpg.jpg" class="cover">
+                    </div>
+                    <input type="text" class="text" placeholder="add a coment">
+                </div>
+                <h5 class="posttime">4 hours ago</h5>
+              </div>
+<br><br><hr><br>
+              <div class="top">
+                
+                <div class="userdetails">
+                    <div class="profile">
+                        <img src="bannu.jpg.jpg"    class="cover">
+                    </div>
+                    <h3 style="font-weight: 100;color:black;"><b>hemanth_ononline</b><br><span>KI Parru,India</span></h3>
+                </div>
+                <div>
+                    <img src="dot.png" class="dot">
+                </div>
+              </div>
+              <div>
+                <div class="imgbx">
+                    <img src="pushpa.jpg" class="cover">
+                </div>
+                <div class="actionbtns">
+                    <div class="left">
+                        <img src="heart.png" class="heart1" height="8%" width="8%" onclick="likebutton1()">&ensp;
+                        <img src="comment.png" class="i">&ensp;
+                        <img src="share.png" class="i"> 
+                        <img src="bookmark.png" class="i" style="float: right;">
+                    </div>
+                    <div class="right">
+                        
+                    </div>
+                    
+                </div>
+                <h4 class="likes" style="color:black;font-family: sans-serif;font-size:medium;">Liked by virat.kohli and 2,245 others</h4>
+                <div><p class="message" style="font-family:sans-serif;font-size: smaller;text-align: left;color: black;"><b>hemanth_ononline</b> My favaurite actor <a href="">@alluarjunononline </a>,our new panindianstar.</p>
+                    one of icon</p></div>
+                    <p style="text-align: left;font-family:sans-serif;font-size: smaller;"><a href=""> #virat #viratkohli #ipl #cricket #rohitsharma #kohli #msdhoni #rcb #viratians #kingkohli #dhoni #indiancricket <br>#indiancricketteam #india #abdevilliers #virushka #klrahul #csk #icc #teamindia #viratian #bcci #msd #viratkohlifanpage<br> #love #hardikpandya #mahi #anushkasharma #royalchallengersbangalore #viratkohlifc</a></p>
+                <h4 class="comments" style="font-family: sans-serif;">view all 45,656 comments</h4>
+                <div class="addcomments">
+                    <div class="userimg">
+                        <img src="bannu.jpg.jpg" class="cover">
+                    </div>
+                    <input type="text" class="text" placeholder="add a coment">
+                </div>
+                <h5 class="posttime">4 hours ago</h5>
+              </div>
+<br><hr>
+              
+      </div>
+      <script>
+        function likebutton(){
+            let heart=document.querySelector('.heart');
+            let likes=document.querySelector('.likes');
+            if(heart.src.match("heart.png")){
+                heart.src="heart_red.png";
+                likes.innerHTML="Liked by virat.kohli and 2,246 others";
+            }
+            else{
+                heart.src="heart.png";
+                likes.innerHTML="Liked by virat.kohli and 2,245 others";
+            }
+        }
+        function likebutton1(){
+            let heart1=document.querySelector('.heart1');
+            let likes1=document.querySelector('.likes1');
+            if(heart1.src.match("heart.png")){
+                heart1.src="heart_red.png";
+                likes1.innerHTML="Liked by alluarjunonline and 2,246 others";
+            }
+            else{
+                heart1.src="heart.png";
+                likes1.innerHTML="Liked by alluarjunonline and 2,245 others";
+            }
+        }
+      </script>
+    </body>
+</html>
